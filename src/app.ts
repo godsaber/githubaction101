@@ -13,7 +13,6 @@ app.use(express.json());
 
 // routes
 app.get("/", (req, res) => {
-	console.log("req", req);
 	res.json({
 		message: "App running!",
 		env: process.env.NODE_ENV || "",
